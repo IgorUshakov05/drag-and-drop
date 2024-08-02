@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# React Drag-and-Drop File Uploader
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple React-based application for uploading and removing files using a drag-and-drop interface. It also supports the deletion of files by dragging them into a "remove" area.
 
-## Available Scripts
+## Table of Contents
+- [Author - Ушаков Игорь](https://github.com/IgorUshakov05)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Drag-and-drop support**: Easily upload files by dragging them into the upload area.
+- **File list management**: View uploaded files in a list format.
+- **File removal**: Remove files by clicking on them or dragging them to the designated remove area.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. **Clone the repository**:
 
-### `npm test`
+    ```bash
+    git clone https://github.com/IgorUshakov05/drag-and-drop.git
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Navigate to the project directory**:
 
-### `npm run build`
+    ```bash
+    cd react-drag-and-drop-file-uploader
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Install dependencies**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+1. **Start the development server**:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ```bash
+    npm start
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Open your browser**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    Go to `http://localhost:3000` to see the application in action.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. **Drag and drop files**:
 
-## Learn More
+    - Drag files from your file explorer and drop them into the designated upload area.
+    - View the files in the list.
+    - Remove files by either clicking on them or dragging them into the remove area.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```plaintext
+├── src
+│   ├── assets
+│   │   └── img
+│   │       ├── upload.png   # Upload icon
+│   │       └── remove.png   # Remove icon
+│   ├── App.tsx              # Main React component
+│   ├── App.css              # Styling for the app
+│   └── index.tsx            # Entry point for React
+├── public
+│   └── index.html           # Main HTML file
+├── package.json             # Project dependencies and scripts
+└── README.md                # Project documentation
